@@ -1,0 +1,86 @@
+
+/*Fondo total*/
+body {
+    font-family: arial;
+    background-color: #99A3D7;
+    overflow: hidden;
+    
+}
+
+
+
+/*Cuadro azul del centro*/
+.letrero{
+    background-color: #0E00B5;
+    width: 600px; 
+    height: 100px;
+    margin: auto;
+    margin-top: 50px;
+    padding: 20px 20px;
+
+}
+
+.mensaje{
+    font-size: large;
+    color: white;
+}
+
+.nombre1{
+    margin-left: 470px;
+    margin-right: 10px;
+    top: -20px;
+    position: relative;
+}
+
+
+.administrador {
+    display: inline-flex;
+    margin: 10px;
+    position: relative;
+    margin-left: 470px;
+    margin-top: 20px;
+    margin-bottom: -10px;
+    margin-right: 70em;
+    border-color: black;
+    border-style:solid;
+    border-width: 4px;
+    height: 220px;
+    
+}
+
+.nombre2{
+    position: relative;
+    justify-content: center;
+    top: 100;
+    left: -600px;
+}
+
+
+.supervisor{
+    display: inline-flex;
+    height: 223px;
+    position: relative;
+    left: 840px;
+    top: -220px;
+    border-color: black;
+    border-style: solid;
+    border-width: 4px;
+}
+
+.colombina{
+    height: 200px;
+    position: relative;
+    left: 600px;
+    top: -120px;
+
+}
+
+
+
+
+
+
+
+
+
+

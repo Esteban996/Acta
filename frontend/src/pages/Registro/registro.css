@@ -1,0 +1,10 @@
+
+
+.registrouser{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    top: 20px;
+    padding-top: 3rem;
+}
