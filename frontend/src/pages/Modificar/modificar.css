@@ -1,0 +1,20 @@
+
+
+.modificar{
+    margin: 20px;
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+.buscar{
+    width: 500px;
+    border: solid 3px #99a3d7;
+    border-radius: 10px;
+}
+
+.title{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+}

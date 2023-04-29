@@ -1,0 +1,21 @@
+
+
+
+.consulta{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.consultar{
+    margin: 20px;
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+
+.title{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
