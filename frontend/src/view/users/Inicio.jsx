@@ -15,7 +15,7 @@ export default function Inicio() {
       </section>
 
       <div>
-        <a href="/">
+        <a href="/Super">
           <img
             id="administrador"
             src={imgadmin}
@@ -26,7 +26,7 @@ export default function Inicio() {
       </div>
 
       <div>
-        <a href='/'>
+        <a href='/Super'>
           {" "}
           <img
             id="supervisor"
