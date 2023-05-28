@@ -3,16 +3,20 @@ import GoogleLogin from 'react-google-login';
 import {gapi } from "gapi-script";
 import logo from "../../assets/images/logoColombina.png";
 import './login1.css';
+import { Route, useNavigate } from "react-router-dom";
 
 export default function Login1(){
 
     const clientID = "402750527956-0bdb5vadvibe9aplmqhs1hp184mss55u.apps.googleusercontent.com";
     const [user, setUser] = useState({});
-    const [loggeIn, setLoggetInfo] = useState(false); 
+    const [loggedIn, setLoggedIn] = useState(false); 
+    const navigate = useNavigate ();
+    
 
   const onSuccess = (response) => {
     setUser(response.profileObj);
     document.getElementsByClassName("btn").hidden = true;
+    setLoggedIn(true);
   }
   const onFailure = (response) => {
     console.log("Something went wrong");
@@ -29,6 +33,12 @@ export default function Login1(){
     gapi.load("client:auth2", start);
   });
 
+  useEffect(() => {
+    if (loggedIn) {
+      navigate("/admin");
+    }
+  }, [loggedIn, navigate]);
+
 
   return (
     <div className="App">
@@ -42,25 +52,19 @@ export default function Login1(){
      <section>
      <div className="center">
     
-      <div className='btn'>
+      <div className='btn1'>
 
         <GoogleLogin
-         
           clientId={clientID}
           onSuccess={onSuccess}
           onFailure={onFailure}
           buttonText="Continue  with Google"
           cookiePolicy={"single_host_origin"}
+          
         />
-
-      </div>
-
       
-      <div class={user ? "profile" : "hidden"}>
-        <img src={user.imageUrl} alt=''/>
-        <h3>{user.name}</h3>
-  
       </div>
+      
 
 
 

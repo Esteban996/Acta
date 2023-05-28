@@ -19,6 +19,11 @@ function App () {
         <Routes>
           <Route path="/" element={<IncioPage/>} />
           <Route exact path="/Super" element ={<Login1/>}/>
+          <Route exact path="/admin" element={<Admin />} />
+          <Route exact path="/admin/registro" element={<ViewRegistro />} />
+          <Route exact path="/admin/modificar" element={<ViewModificar />} />
+          <Route exact path="/admin/eliminar" element={<ViewEliminar />} />
+          <Route exact path="/admin/consultar" element={<ViewConsultar />} />
         </Routes>
       </div>
       <div className='dashboard-container'> 

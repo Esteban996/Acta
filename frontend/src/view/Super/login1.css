@@ -100,11 +100,17 @@
 
   .btn{ 
 
-    position: absolute;
     top: 81%;
     left: 44%;
   }
   
+  .btn1{ 
+
+    position: absolute;
+    top: 81%;
+    left: 44%;
+  }
+
   .center form{
     padding: 0 40px;
     box-sizing: border-box;
